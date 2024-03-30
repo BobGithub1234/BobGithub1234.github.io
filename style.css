@@ -1,4 +1,4 @@
-*{
+*{ /* universal selector */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -53,10 +53,6 @@
 .links{
     display: inline-block;
 }
-.phone-container{
-    margin-right: -225px
-}
-
 
 .nav-bar-links{
     color: #fff;
@@ -73,23 +69,8 @@
 
 
 
-.email-photo
-{
-    width: 20px;
-    height: auto;
-    margin-right: 5px
-}
-
-.phone-photo
-{
-    width: 20px;
-    height: auto;
-    margin-right: 5px
-}
-
-
-
-.welcome{
+/* body writing */
+.welcome{ /* only for index.html */
     max-width: 800px;
     margin: 25px auto;
     justify-content: center;
@@ -100,7 +81,7 @@
     margin: 25px auto;
     justify-content: center;
 }
-
+/* body writing */
 
 
 
@@ -118,8 +99,6 @@
 }
 /* MAP */
 
-
-
 /* COPYRIGHT */
 .footer-copyright {
     background-color: #353791;
@@ -134,11 +113,17 @@
 }
 /* COPYRIGHT */
 
+/* regarding contact-us */
+.newimages{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+}
 
-
-
-
-
+.item{
+    margin: 2.5px;
+}
+/* regarding contact-us */
 
 
 .links-class.show-links {
@@ -149,15 +134,6 @@
     justify-content: center;
   }
 
-.newimages{
-    display: flex;
-    flex-wrap: wrap;  
-    justify-content: center;
-}
-
-.item{
-    margin: 2.5px;
-}
 
 
 .images{
@@ -173,15 +149,11 @@
     border: 2px solid black;
 }
 
-.mappp{
-    display: block;
-    justify-content: center;
-    align-items: center;
 
-}
 .links-toggle {
     display: none; /* Hide by default */
     position: relative;
+
 }
 
 
@@ -190,17 +162,17 @@
 }
 
 
-/* Media query for small screens */
+/* For small screens */
 @media screen and (max-width: 768px) {
 .links-toggle {
-    display: block; /* Show the hamburger icon */
+    display: block; /* Show hamburger icon */
     color: #fff;
 }
 .links-class {
-    display: none; /* Hide the menu by default on small screens */
+    display: none; /* Hide menu by default on small screens */
     position: absolute;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 48px;
     background-color: #555555;
 }
 .item:nth-child(1) {
@@ -218,5 +190,4 @@
     color: white;
 }
 }
-
-
+/* For small screens */
